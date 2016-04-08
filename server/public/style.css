@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(60, 9, 226);
+  color: white;
+}
+header {
+  background-color: white;
+  color: red;
+  font-size: 50px;
+  height: 90px;
+  margin-bottom: 50px;
+  line-height: 90px;
+}
+h1, h2 {
+  color: red;
+
+}
+h1 {
+  text-align: center;
+}
+.right {
+  float: right;
+  clear: left;
+  width: 45%;
+
+}
+button {
+  margin-left:  100px;
+}
+li{
+  list-style-type: none;
+}
+p {
+  font-size: 40px;
+  color: red;
+}

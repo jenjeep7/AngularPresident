@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Angular Politician
+  </title>
+  <script src="angular.min.js"></script>
+  <script src="client.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body ng-controller="PoliticController">
+  <header>
+
+
+    <h1>Prime Political Election</h1>
+  </header>
+
+  <div>
+
+    <button ng-click="getCandidates()">See the Candidates</button>
+    <button ng-click="getWinner()">The Winner Is!</button>
+  </div>
+  <section class="right">
+  <div ng-show="buttonClicked">
+    <h2>Republicans</h2>
+    <ul>
+      <li ng-repeat="person in republicans">
+        {{person}}
+      </li>
+    </ul>
+  </div>
+
+
+
+
+    <div ng-show="buttonClicked">
+
+
+      <h2>Democrats</h2>
+      <ul>
+        <li ng-repeat="guys in democrats">
+          {{guys}}
+        </li>
+      </ul>
+    </div>
+
+    <div ng-show="winnerClicked">
+      <p class="win">
+        The winner is: {{winner}}
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
